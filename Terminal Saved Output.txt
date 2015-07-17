@@ -1,0 +1,161 @@
+Last login: Fri Jul 17 09:27:39 on console
+MacBook:‾ hidenori$ pip
+
+Usage:   
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  search                      Search PyPI for packages.
+  wheel                       Build wheels from your requirements.
+  zip                         DEPRECATED. Zip individual packages.
+  unzip                       DEPRECATED. Unzip individual packages.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --isolated                  Run pip in an isolated mode, ignoring
+                              environment variables and user configuration.
+  -v, --verbose               Give more output. Option is additive, and can be
+                              used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output.
+  --log <path>                Path to a verbose appending log.
+  --proxy <proxy>             Specify a proxy in the form
+                              [user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection should
+                              attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists:
+                              (s)witch, (i)gnore, (w)ipe, (b)ackup.
+  --trusted-host <hostname>   Mark this host as trusted, even though it does
+                              not have valid or any HTTPS.
+  --cert <path>               Path to alternate CA bundle.
+  --client-cert <path>        Path to SSL client certificate, a single file
+                              containing the private key and the certificate
+                              in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine
+                              whether a new version of pip is available for
+                              download. Implied with --no-index.
+MacBook:‾ hidenori$ pip install --upgrade pip
+You are using pip version 6.1.1, however version 7.1.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting pip
+  Downloading pip-7.1.0-py2.py3-none-any.whl (1.1MB)
+    100% |################################| 1.1MB 234kB/s 
+Installing collected packages: pip
+  Found existing installation: pip 6.1.1
+    Uninstalling pip-6.1.1:
+      Successfully uninstalled pip-6.1.1
+Successfully installed pip-7.1.0
+MacBook:‾ hidenori$ pip install chainer
+Collecting chainer
+  Downloading chainer-1.1.0.tar.gz (88kB)
+    100% |################################| 90kB 1.1MB/s 
+Collecting nose (from chainer)
+  Downloading nose-1.3.7-py2-none-any.whl (154kB)
+    100% |################################| 155kB 1.2MB/s 
+Requirement already satisfied (use --upgrade to upgrade): numpy in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (from chainer)
+Collecting protobuf (from chainer)
+  Downloading protobuf-2.6.1.tar.gz (188kB)
+    100% |################################| 188kB 1.2MB/s 
+Collecting six>=1.9.0 (from chainer)
+  Downloading six-1.9.0-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (from protobuf->chainer)
+Installing collected packages: nose, protobuf, six, chainer
+  Running setup.py install for protobuf
+  Running setup.py install for chainer
+Successfully installed chainer-1.1.0 nose-1.3.7 protobuf-2.6.1 six-1.9.0
+MacBook:‾ hidenori$ git clone https://github.com/pfnet/chainer.git
+Cloning into 'chainer'...
+remote: Counting objects: 5829, done.
+remote: Compressing objects: 100% (171/171), done.
+remote: Total 5829 (delta 106), reused 0 (delta 0), pack-reused 5658
+Receiving objects: 100% (5829/5829), 6.52 MiB | 1.73 MiB/s, done.
+Resolving deltas: 100% (4092/4092), done.
+MacBook:‾ hidenori$ python chainer/examples/mnist/train_mnist.py
+load MNIST dataset
+Downloading train-images-idx3-ubyte.gz...
+Done
+Downloading train-labels-idx1-ubyte.gz...
+Done
+Downloading t10k-images-idx3-ubyte.gz...
+Done
+Downloading t10k-labels-idx1-ubyte.gz...
+Done
+Converting training data...
+Done
+Converting test data...
+Done
+Save output...
+Done
+Convert completed
+('epoch', 1)
+graph generated
+train mean loss=0.28033228611, accuracy=0.913550001308
+test  mean loss=0.115207302903, accuracy=0.964500004053
+('epoch', 2)
+train mean loss=0.138193443883, accuracy=0.958416669369
+test  mean loss=0.092796156588, accuracy=0.972200006843
+('epoch', 3)
+train mean loss=0.109385671959, accuracy=0.966616672675
+test  mean loss=0.0734389593537, accuracy=0.977500008345
+('epoch', 4)
+train mean loss=0.0939604225693, accuracy=0.970483340522
+test  mean loss=0.0735219787936, accuracy=0.977200005651
+('epoch', 5)
+train mean loss=0.0823296646448, accuracy=0.974633342127
+test  mean loss=0.0810296841603, accuracy=0.977200006843
+('epoch', 6)
+train mean loss=0.0785985531996, accuracy=0.976366677284
+test  mean loss=0.0685700080298, accuracy=0.979600004554
+('epoch', 7)
+train mean loss=0.0696130530478, accuracy=0.977966676851
+test  mean loss=0.0652278968953, accuracy=0.980000007749
+('epoch', 8)
+train mean loss=0.0689834335631, accuracy=0.978550010026
+test  mean loss=0.0640794527435, accuracy=0.981300004125
+('epoch', 9)
+train mean loss=0.0633812233852, accuracy=0.979766677817
+test  mean loss=0.063686352545, accuracy=0.981300005317
+('epoch', 10)
+train mean loss=0.0620535184724, accuracy=0.981300010482
+test  mean loss=0.0619331788868, accuracy=0.982400006056
+('epoch', 11)
+train mean loss=0.0565756461106, accuracy=0.982033344507
+test  mean loss=0.0644750025997, accuracy=0.982600005269
+('epoch', 12)
+train mean loss=0.0527962597513, accuracy=0.983350011408
+test  mean loss=0.0670048497069, accuracy=0.981800006628
+('epoch', 13)
+train mean loss=0.0537226758806, accuracy=0.983866678079
+test  mean loss=0.0634452738266, accuracy=0.982500006557
+('epoch', 14)
+train mean loss=0.049116010187, accuracy=0.98520001024
+test  mean loss=0.0679962771529, accuracy=0.982800007463
+('epoch', 15)
+train mean loss=0.0513250354078, accuracy=0.983600010673
+test  mean loss=0.0632594497053, accuracy=0.983200008273
+('epoch', 16)
+train mean loss=0.0506256654131, accuracy=0.984716676772
+test  mean loss=0.0600435909733, accuracy=0.983100007772
+('epoch', 17)
+train mean loss=0.0463338112329, accuracy=0.985450009902
+test  mean loss=0.0585088169594, accuracy=0.984200008512
+('epoch', 18)
+train mean loss=0.0428477977769, accuracy=0.987083343267
+test  mean loss=0.0568872665474, accuracy=0.986600007415
+('epoch', 19)
+train mean loss=0.0462609007194, accuracy=0.985666677256
+test  mean loss=0.0588093168459, accuracy=0.98590000689
+('epoch', 20)
+train mean loss=0.0486672781675, accuracy=0.985983343621
+test  mean loss=0.0633980164513, accuracy=0.985000008941
+MacBook:‾ hidenori$ 
