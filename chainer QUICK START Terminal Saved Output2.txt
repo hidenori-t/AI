@@ -1,0 +1,75 @@
+Last login: Sat Jul 18 10:23:01 on console
+MacBook:‾ hidenori$ pip install chainer --upgrade
+Requirement already up-to-date: chainer in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+Requirement already up-to-date: nose in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (from chainer)
+Requirement already up-to-date: numpy in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (from chainer)
+Requirement already up-to-date: protobuf in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (from chainer)
+Requirement already up-to-date: six>=1.9.0 in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (from chainer)
+Requirement already up-to-date: setuptools in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (from protobuf->chainer)
+MacBook:‾ hidenori$ python chainer/examples/mnist/train_mnist.py
+  File "chainer/examples/mnist/train_mnist.py", line 38
+SyntaxError: Non-ASCII character '¥xe5' in file chainer/examples/mnist/train_mnist.py on line 38, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+MacBook:‾ hidenori$ python chainer/examples/mnist/train_mnist.py
+load MNIST dataset
+('epoch', 1)
+graph generated
+train mean loss=0.277308782407, accuracy=0.914850001509
+test  mean loss=0.111522429005, accuracy=0.963600004315
+('epoch', 2)
+train mean loss=0.135159053222, accuracy=0.958550002873
+test  mean loss=0.0877144562974, accuracy=0.972200005651
+('epoch', 3)
+train mean loss=0.11001046362, accuracy=0.965933339993
+test  mean loss=0.0726221544464, accuracy=0.978200006485
+('epoch', 4)
+train mean loss=0.0932804714128, accuracy=0.971366673907
+test  mean loss=0.0674346871441, accuracy=0.97960000515
+('epoch', 5)
+train mean loss=0.0806085540457, accuracy=0.975183343093
+test  mean loss=0.0684670376863, accuracy=0.980500005484
+('epoch', 6)
+train mean loss=0.0774828329535, accuracy=0.976316675742
+test  mean loss=0.0686658256023, accuracy=0.979600005746
+('epoch', 7)
+train mean loss=0.0749241518672, accuracy=0.976716675957
+test  mean loss=0.0663032295987, accuracy=0.979700006843
+('epoch', 8)
+train mean loss=0.0689319339026, accuracy=0.97871667703
+test  mean loss=0.0694358118527, accuracy=0.980500010252
+('epoch', 9)
+train mean loss=0.0619512193066, accuracy=0.980033343931
+test  mean loss=0.0520278936534, accuracy=0.983800005913
+('epoch', 10)
+train mean loss=0.0569722489648, accuracy=0.981850010653
+test  mean loss=0.0653984337382, accuracy=0.981500005126
+('epoch', 11)
+train mean loss=0.0587894283396, accuracy=0.982366677523
+test  mean loss=0.0581143130288, accuracy=0.982800006866
+('epoch', 12)
+train mean loss=0.0525872725911, accuracy=0.983716676533
+test  mean loss=0.0663710184927, accuracy=0.982200009227
+('epoch', 13)
+train mean loss=0.0555752660573, accuracy=0.983100011647
+test  mean loss=0.0605013433492, accuracy=0.9836000067
+('epoch', 14)
+train mean loss=0.0554848055865, accuracy=0.983383344114
+test  mean loss=0.0629612641757, accuracy=0.983800008893
+('epoch', 15)
+train mean loss=0.0456024247356, accuracy=0.985816677411
+test  mean loss=0.059292610303, accuracy=0.983300005794
+('epoch', 16)
+train mean loss=0.0468008106921, accuracy=0.985733342965
+test  mean loss=0.0590702088697, accuracy=0.985400007963
+('epoch', 17)
+train mean loss=0.0500238604884, accuracy=0.985216676692
+test  mean loss=0.0674591570278, accuracy=0.982600007653
+('epoch', 18)
+train mean loss=0.0484503675524, accuracy=0.985266677241
+test  mean loss=0.068418381183, accuracy=0.981800008416
+('epoch', 19)
+train mean loss=0.0436167747104, accuracy=0.9867000102
+test  mean loss=0.0670795981897, accuracy=0.985400005579
+('epoch', 20)
+train mean loss=0.0456145114722, accuracy=0.986416676144
+test  mean loss=0.0750500827529, accuracy=0.982200007439
+MacBook:‾ hidenori$ 
