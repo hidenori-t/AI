@@ -19,6 +19,16 @@ pip install chainer
 git clone https://github.com/pfnet/chainer.git
 python chainer/examples/mnist/train_mnist.py
 ```
+
+/usr/local/lib/python2.7/site-packages/ と
+/Users/tatarahidenori にgitHubからフォークしたものが入っている.
+
+[GitHubでFork/cloneしたリポジトリは下のやり方で本家リポジトリに追従している](http://qiita.com/xtetsuji/items/555a1ef19ed21ee42873)
+```
+git fetch upstream
+git merge upstream/master
+```
+
 Chainerの順伝播型ニューラルネットワークでClassificationしてみる、という試み
 
 # MNIST(Mixed National Institute of Standards and Technology)とは
@@ -43,7 +53,7 @@ trainは学習に使用され、testの方は学習の評価に使用されま�
 lossは予測と正解の一致が多くなると小さくなる値、
 accuracyは正解率をそれぞれ意味します。なのでこれらの値の推移を見ていると学習が進んでいる様子が分かると思います。
 
-# Chainerをアップグレード
+# pipで入れた chainerをアップグレード 
 ```
 $ sudo pip install chainer --upgrade
 ```
