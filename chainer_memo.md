@@ -13,6 +13,12 @@ ChainerはPreffered Networksが開発したニューラルネットワークを�
 [PFN発のディープラーニングフレームワークchainerで画像分類をするよ(chainerでニューラルネット1)](http://hi-king.hatenablog.com/entry/2015/06/11/021144)
 
 ***
+macbook pro
+```
+pip install chainer
+```
+で入れた
+
 macbook で試した
 ```
 pip install chainer
@@ -53,7 +59,7 @@ trainは学習に使用され、testの方は学習の評価に使用されま�
 lossは予測と正解の一致が多くなると小さくなる値、
 accuracyは正解率をそれぞれ意味します。なのでこれらの値の推移を見ていると学習が進んでいる様子が分かると思います。
 
-# pipで入れた chainerをアップグレード 
+# pipで入れた chainerをアップグレード
 ```
 $ sudo pip install chainer --upgrade
 ```
